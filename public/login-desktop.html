@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>Login</title>
+    <link rel="icon" href="/img/favicon.jpeg" type="image/x-icon" />
+	<script src="http://yandex.st/jquery/1.11.1/jquery.min.js"></script>
+	<style>
+		html,body,.wrap{
+			height:100%;
+			margin:0;
+			background: url(img/f.jpg) 0 100% no-repeat;
+			background-size: cover;
+		}
+		
+		body{
+
+			background: url(img/f.jpg) 0 100% no-repeat;
+			background-size: cover;
+
+		}
+
+		.label{
+			height: 20vw;
+			width:50%;
+			margin:auto;
+			background: url(img/label-s.png) 0 100% no-repeat;
+			background-size: 100%;
+			min-width: 460px;
+		}
+
+		.wrap{
+			height:100%;
+			width: 100%;
+			/*margin: auto;*/
+			min-width: 460px;
+			box-sizing: border-box;
+			overflow: auto;
+		}
+
+		form{
+			font-size: 0;
+			width:50%;
+			margin: auto;
+			height: 60px;
+			min-width: 420px;
+		}
+
+		form input{
+			box-sizing: border-box;
+			font-size: 30px;
+			padding: 10px;
+			height: 100%;
+		}
+
+		form input[type=text]{
+			width:70%;
+			font-family: "Comic Sans MS", "Comic Sans", cursive;
+			vertical-align: top;
+		}
+		form input[type=submit]{
+			width:30%;
+			border: none;
+			color: white;
+			cursor: pointer;
+			background: #42d4f4;
+		}
+
+		.msg{
+			text-align: center;
+			font-family: "Comic Sans MS", "Comic Sans", cursive;
+			padding: 20px;
+			color:#717272;
+			font-size: 25px;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="label"></div>
+		<div class="msg">Введите ваше имя или ник</div>
+		<form action="/login" method="POST">
+			<input type="text" name="username" id="username"  maxlength="15" required placeholder="Имя">
+			<input type="submit" value="Войти">
+		</form>
+
+	</div>
+
+
+</body>
+
+<script>
+	$(document).ready(function() {
+
+
+
+		if(window.screen.width< window.screen.height){
+			$('.wrap').css('width', '100%');
+			$('.wrap').css('margin', 'auto');
+			$('.wrap').css('padding', '0 1vw');
+		}
+
+
+		window.addEventListener("orientationchange", function() {
+			//$('body').css('height', window.screen.height);
+		    if(window.screen.width< window.screen.height){
+				$('.wrap').css('padding', '0 1vw');
+				$('.wrap').css('margin', 'auto');
+				$('.wrap').css('padding-top', '30vw');
+			}else{
+				$('.wrap').css('width', '100%');
+				$('.wrap').css('padding-top', '0vw');
+				$('.wrap').css('margin', '0 auto');
+			}
+		}, false);
+
+	});
+</script>
+</html>

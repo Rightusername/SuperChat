@@ -1,0 +1,232 @@
+    body {
+        font: 13px Helvetica, Arial;
+    }
+    
+    html, body, .chat, .wrap {
+        height: 100%;
+        margin: 0;
+
+    }
+    
+    .wrap {
+        width: 100%;
+        font-size: 0;
+        vertical-align: top;
+        background: url(../img/back.jpg) 0 0 no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        box-sizing: border-box;
+        min-height: 400px;
+    }
+    
+    .nav-wrap {
+        width: 30%;
+        height: 100%;
+        display: inline-block;
+        box-sizing: border-box;
+        vertical-align: top;
+        padding: 0.9vw;
+ 
+    }
+    
+    .nav-content {
+        background: white;
+        position: relative;
+        height: 250px;
+        width: 100%;
+        background: #efd1ff;
+        padding-top: 20px;
+        box-sizing: border-box;
+    }
+    
+    .nav-header {
+        width: 90%;
+        margin: auto;
+        height: 90px;
+        background: #f9effc url(../img/label-s.png) 50% 50% no-repeat;
+        background-size: 80%;
+        padding: 20px;
+
+        box-sizing: border-box;
+        border-radius: 1vw;
+        border: 3px #f2f2f2 solid;
+    }
+    
+    .nav-body {
+        font-size: 20px;
+        padding-top: 30px;
+        text-align: center;
+    }
+    
+    .nav-nick {
+        color: #e88235;
+        padding: 5px;
+    }
+
+    .nav-nick-edit{
+
+    }
+    
+    .nick-change{
+        display: block;
+        width: calc(100% - 1.8vw);
+        color: white;
+        background:#adc9f7;
+        border-radius: 1vw;
+        padding: 10px;
+        box-sizing: border-box;
+        text-decoration: none;
+        margin: auto;
+    }
+
+    .chat {
+        display: inline-block;
+        width: 70%;
+        box-sizing: border-box;
+        white-space: nowrap;
+        font-size: 0;
+        vertical-align: top;
+        margin: 0.9vw 0;
+        height: calc(100% - 1.8vw);
+        background: white;
+    }
+    
+    .form {
+        width: 100%;
+        height: 60px;
+        background: #3d6caa;
+        padding: 0.3vw;
+        font-size: 0;
+        box-sizing: border-box;
+        min-height: 50px;
+    }
+    
+    .form input {
+        display: inline-block;
+        box-sizing: border-box;
+        width: 80%;
+        border: 0;
+        padding: 5px;
+        height: 100%;
+        font-size: 25px;
+    }
+
+    .form input:focus .chat{
+        padding-bottom: 0;
+    }
+    
+    .form button {
+        display: inline-block;
+        box-sizing: border-box;
+        width: 20%;
+        height: 100%;
+        background: #3d6caa;
+        border: none;
+        padding: 5px;
+        font-size: 23px;
+        color: white;
+        cursor: pointer;
+
+    }
+    
+    .form button:active {
+        background: #b5d6e5;
+    }
+    
+    .messages {
+        position: relative;
+        display: inline-block;
+        border-bottom: 0;
+        height: calc(100% - 80px);
+        width: 100%;
+        overflow: auto;
+        box-sizing: border-box;
+        padding: 1vw;
+        padding-bottom: 20px;
+        outline: 0;
+        word-wrap: break-word;
+        font-size: 25px;
+        background: white;
+    }
+    
+    #users {
+        overflow: auto;
+        font-size: 20px;
+        padding: 13px;
+        padding-top: 0px;
+        border-radius: 1vw;
+        border: 3px solid white;
+        box-sizing: border-box;
+        height: 100%;
+        background: #fcfcf4;
+    }
+    
+    .users_wrap {
+        display: inline-block;
+        width: 100%;
+        height: calc(100% - 250px);
+        padding: 0.9vw;
+        box-sizing: border-box;
+        background: #efd1ff;
+    }
+
+    .user-icon{
+        padding-left: 4px;
+        margin-bottom: -1px;
+    }
+    
+    .nick {
+        color: #2aa89e;
+    }
+    
+    .own_nick {
+        color: #e88235;
+        font-weight: bold;
+    }
+    
+    .msg {
+        /*font-size: 1.5vw;*/
+        word-wrap: break-word;
+        white-space: normal;
+    }
+    
+    .own_msg {}
+    
+    .users_label {
+        font-size: 12px;
+        color: #9fa8b7;
+    }
+    
+    .user_online {
+        color: #5b418c;
+    }
+
+    .close-btn{
+        position: absolute;
+        margin: 5px;
+        top:0;
+        right:0;
+        height: 30px;
+        width: 30px;
+        background: url(../img/close.png) 0 0 no-repeat;
+        background-size: 100%;
+    }
+
+    .show-btn{
+        position: fixed;
+        margin: 5px;
+        top:0;
+        left:0;
+        height: 30px;
+        width: 30px;
+    }
+
+    .typing{
+        background:white;
+        font-size: 11px;
+        padding: 4px;
+        color:#636363;
+        width: 100%;
+        height: 20px;
+        box-sizing: border-box;
+    }

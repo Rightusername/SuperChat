@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" href="/img/favicon.jpeg" type="image/x-icon" />
+	<title>Чатик</title>
+	<link rel="stylesheet" type="text/css" href="mobile/styles.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <script src="./jquery-3.2.1.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script> 
+    <script src="/logic/logic.js"></script>
+    <script src="/mobile/view.js"></script>
+</head>
+<body>
+
+<div class="wrap">
+    <div class="nav-wrap">
+        <div class="nav-content">
+        	<div class="close-btn">X</div>
+            <div class="nav-header"></div>
+            <div class="nav-body">
+            	<div class="nav-nick-edit">
+	            	Ваш ник:<br>
+	                <div class="nav-nick"></div>
+	                <a href="/logout" class="nick-change">Сменить </a>
+            	</div>
+             
+            </div>
+        </div>
+        <div class="users_wrap">
+            <div id="users">
+                 <span class="users_label">Онлайн:</span>
+            </div>
+        </div>
+    </div>
+    <div class="chat">
+        <div class="messages" id="messages">
+        	<div class="show-btn"></div>
+        </div>
+        <div class="typing"></div>
+        <div class="form">
+            <input type="text" name="message_text" id="message_text" placeholder="Сообщение">
+            <button type="button" id="message_btn">Отправить</button>
+        </div>
+    </div>
+    <div style="display:none;" class="smiles-wrap" id="smiles">
+        <div class="smiles scrollbar style-4"></div>
+    </div> 
+    
+</div>
+</body>
+</html>

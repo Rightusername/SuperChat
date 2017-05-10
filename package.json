@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "body-parser": "^1.16.1",
+    "cookie": "^0.3.1",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.13.4",
+    "shortid": "^2.2.8",
+    "socket.io": "x.x",
+    "user-agent-parser": "^0.6.0"
+  },
+  "engines": {
+    "node": "6.9.x",
+    "npm": "3.x.x"
+  }
+}

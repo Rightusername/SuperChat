@@ -1,0 +1,330 @@
+    body {
+        font: 13px Helvetica, Arial;
+    }
+    
+    html, body, .chat, .wrap {
+        height: 100%;
+        margin: 0;
+    }
+    
+    .wrap {
+        width: 100%;
+        font-size: 0;
+        vertical-align: top;
+        background: url(../img/back.jpg) 0 0 no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        min-height: 500px;
+        min-width: 1050px;
+    }
+    
+    .nav-wrap {
+        width: 20%;
+        height: 100%;
+        display: inline-block;
+        box-sizing: border-box;
+        vertical-align: top;
+        padding: 0.9vw;
+    }
+    
+    .nav-content {
+        background: white;
+        position: relative;
+        height: 280px;
+        width: 100%;
+        background: #efd1ff;
+        padding-top: 20px;
+        box-sizing: border-box;
+    }
+    
+    .nav-header {
+        width: 90%;
+        margin: auto;
+        height: 90px;
+        background: #f9effc url(../img/label-s.png) 50% 50% no-repeat;
+        background-size: 80%;
+        padding: 20px;
+
+        box-sizing: border-box;
+        border-radius: 1vw;
+        border: 3px #f2f2f2 solid;
+    }
+    
+    .nav-body {
+        font-size: 20px;
+        padding-top: 30px;
+        text-align: center;
+    }
+    
+    .nav-nick {
+        color: #e88235;
+        padding: 5px;
+    }
+
+    .nav-nick-label{
+        color: #777777;
+        font-family: "Comic Sans MS", "Comic Sans", cursive;
+    }
+
+    .nick-change{
+        display: block;
+        width: calc(100% - 1.8vw);
+        color: white;
+        background:#adc9f7;
+        border-radius: 1vw;
+        padding: 10px;
+        box-sizing: border-box;
+        text-decoration: none;
+        margin: auto;
+    }
+    
+    .chat {
+        display: inline-block;
+        width: 60%;
+        box-sizing: border-box;
+        white-space: nowrap;
+        font-size: 0;
+        vertical-align: top;
+        height: calc(100% - 1.8vw);
+        background: white;
+        margin: 0.9vw 0;
+    }
+    
+    .form {
+        width: 100%;
+        height: 11%;
+        background: #3d6caa;
+        padding: 0.3vw;
+        font-size: 0;
+        box-sizing: border-box;
+        min-height: 50px;
+    }
+    
+    .form #message_text {
+        display: inline-block;
+        box-sizing: border-box;
+        width: 80%;
+        border: 0;
+        padding: 8px;
+        height: 100%;
+        font-size: 13px;
+        resize: none;
+    }
+    
+    .form button {
+        display: inline-block;
+        box-sizing: border-box;
+        width: 20%;
+        height: 100%;
+        background: #3d6caa;
+        border: none;
+        padding: 10px;
+        font-size: 16px;
+        color: white;
+        cursor: pointer;
+        vertical-align: top;
+    }
+    
+    .form button:active {
+        background: #b5d6e5;
+    }
+    
+    .messages {
+        position: relative;
+        display: inline-block;
+        border-bottom: 0;
+        height: calc(89% - 19px);
+        width: 100%;
+        overflow: auto;
+        box-sizing: border-box;
+        padding: 1vw;
+        padding-bottom: 5px;
+        outline: 0;
+        word-wrap: break-word;
+        font-size: x-large;
+        background: white;
+    }
+    
+    #users {
+        overflow: auto;
+        font-size: 20px;
+        padding: 13px;
+        padding-top: 0px;
+        border-radius: 1vw;
+        border: 3px solid white;
+        box-sizing: border-box;
+        height: 100%;
+        background: #fcfcf4;
+    }
+    
+    .users_wrap {
+        display: inline-block;
+        width: 20%;
+        height: 100%;
+        padding: 0.9vw;
+        box-sizing: border-box;
+    }
+
+    .user-icon{
+        padding-left: 4px;
+        margin-bottom: -1px;
+    }
+    
+    .nick {
+        color: #2aa89e;
+    }
+    
+    .own_nick {
+        color: #e88235;
+        font-weight: bold;
+    }
+    
+    .msg {
+        /*font-size: 1.5vw;*/
+        color:#424242;
+        font-size: 15px;
+        word-wrap: break-word;
+        white-space: normal;
+        font-family: -apple-system,BlinkMacSystemFont,Roboto,Open Sans,Helvetica Neue,sans-serif;
+
+    }
+    
+    .own_msg {}
+    
+    .users_label {
+        font-size: 12px;
+        color: #9fa8b7;
+    }
+    
+    .user_online {
+        color: #5b418c;
+    }
+
+
+    .tut{
+        position: relative;
+        background: red;
+        width: 100%;
+        height: calc(100% - 280px);
+        box-sizing:border-box;
+        background:#cf60ff;
+    }
+
+    .links{
+        width: 100%;
+        height: 35px;
+        margin-top: 1vw;
+        box-sizing:border-box;
+    }
+    
+    .feed{
+        display:inline-block;
+        font-size: 14px;
+        line-height: 30px;
+        height: 95%;
+        width: calc(100% - 35px - 1vw);
+        border-radius: 1vw;
+        background: #7098ff;
+        text-align: center;
+        margin-left: 1vw;
+        font-weight: bold;
+        color: white;
+        text-decoration: none;
+        cursor:pointer;
+        vertical-align: middle;
+        box-sizing:border-box;
+        border: 3px solid white;
+
+    }
+
+    .sound-off{
+        display:inline-block;
+        background: url(../img/off.png) 50% 50% no-repeat;
+        background-size: 100%;
+        width: 35px;
+        height: 35px; 
+        cursor: pointer;
+        vertical-align: top;
+    }
+
+    .sound-on{
+        display:inline-block;
+        background: url(../img/on.png) 50% 50% no-repeat;
+        background-size: 90%;
+        width: 35px;
+        height: 35px; 
+        cursor: pointer;
+                vertical-align: top;
+    }
+
+    .typing{
+        background:white;
+        font-size: 11px;
+        padding: 4px;
+        color:#636363;
+        width: 100%;
+        height: 20px;
+        box-sizing: border-box;
+        transition: all linear 1s;
+    }
+    
+    .smiles-wrap{
+        width: 100%;
+        height: 100%;
+        padding: 0.9vw;
+        box-sizing: border-box;
+    }
+
+    .smiles{
+        width:100%;
+        height: calc(100% - 35px - 1vw);
+        background:blue;
+        overflow: auto;
+        border-radius:  1vw;
+        border: 3px white solid;
+        background:#fcfcf4;
+        box-sizing: border-box;  
+        padding: 5px 2px;
+        vertical-align: top;
+        text-align: center;
+        line-height: 23px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+    }
+
+    .smile-item{
+        display:inline-block;
+        width:20px;
+        height: 20px;
+        font-size: 26px;
+        padding: 5px;
+        vertical-align: top;
+        text-align: center;
+        cursor:pointer;
+    }
+
+
+
+
+/* SCROLLL*/
+
+
+.style-4::-webkit-scrollbar-track{
+    margin: 7px 0;
+    background: transparent;
+}
+
+.style-4::-webkit-scrollbar{
+    width: 4px;
+    background-color: transparent;
+}
+
+.style-4::-webkit-scrollbar-thumb{   
+    border-radius: 7px;
+    background-color: #9b9b9b;
+
+}
+.scrollbar{   
+    overflow-y: scroll;
+}
